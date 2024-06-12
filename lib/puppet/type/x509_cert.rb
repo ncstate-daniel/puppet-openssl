@@ -42,7 +42,7 @@ Puppet::Type.newtype(:x509_cert) do
     desc 'The optional password for the private key'
   end
 
-  newparam(:req_ext, boolean: true, parent: Puppet::Parameter::Boolean) do
+  newparam(:req_ext, boolean: true) do
     desc 'Whether adding v3 SAN from config'
     defaultto false
   end
